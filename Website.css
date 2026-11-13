@@ -1,0 +1,226 @@
+
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff9fa;
+    color: #333;
+}
+
+/* Navigation */
+header {
+    background-color: white;
+    padding: 20px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #c05b82;
+    font-size: 28px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #c05b82;
+}
+
+/* Home */
+.hero {
+    text-align: center;
+    padding: 130px 20px;
+    background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #73344f;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #c05b82;
+    color: white;
+    padding: 14px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #963e63;
+    transform: translateY(-3px);
+}
+
+/* Sections */
+section {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    color: #a84770;
+    margin-bottom: 40px;
+}
+
+/* Services */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.service {
+    background-color: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    transition: 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
+.service h3 {
+    color: #c05b82;
+    margin-bottom: 15px;
+}
+
+/* Prices */
+.price-list {
+    max-width: 600px;
+    margin: auto;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: white;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+/* Contact */
+#contact {
+    background-color: #fce4ec;
+}
+
+#contact p {
+    margin: 12px;
+}
+
+/* Footer */
+footer {
+    background-color: #73344f;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.map-container {
+    max-width: 900px;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.social-links {
+    text-align: center;
+    margin: 25px auto;
+}
+
+.social-links a {
+    display: inline-block;
+    background-color: #c05b82;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #963e63;
+}
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.instagram-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #c05b82;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.instagram-btn:hover {
+    background-color: #963e63;
+    transform: translateY(-3px);
+}
